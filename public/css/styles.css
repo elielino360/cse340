@@ -4,3 +4,120 @@
 *:after {
   box-sizing: border-box;
 }
+
+/******* Navigation styling ***************/
+nav{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+/******* index styling ***************/
+.welcomeMsg {
+  color:rgb(9, 9, 163);
+  text-decoration: underline;
+}
+
+#top-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.siteName{
+  font-size: 20px;
+}
+.block1{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+  overflow-x: hidden;
+  
+  
+}
+#rightB{
+  padding-left: 20px;
+  background-color: rgba(0, 0, 0, 0.123);
+  color: rgb(9, 9, 163);
+}
+#left{
+  margin-right: 70px;
+}
+
+.block2{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+
+}
+
+.inner_grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid: 10px;
+}
+.grid{
+  border: 5px solid rgb(3, 3, 41);
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  margin: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+html{
+  background-image: url("/images/site/checkerboard.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+}
+body {
+  background-color: azure;
+  background-size: cover;
+  padding: 50px;
+  border: 8px solid rgb(4, 4, 90);
+  border-radius: 10px;
+  margin: 50px;
+}
+#rightB{
+  font-size: 30px;
+}
+#rightB button{
+  border: 5px solid rgb(4, 4, 90);
+  border-radius: 2px ;
+  
+}
+
+@media screen and (max-width: 768px){
+  
+html{
+ background: none;
+ background-color: white;
+}
+body{
+  background: none;
+  padding: 0px;
+  border: 0;
+  border-radius: 0;
+  overflow-x: hidden;
+ 
+}
+
+.block2{
+  display: block;
+}
+.inner_grid{
+  display: block;
+}
+
+}
